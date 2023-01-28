@@ -1,0 +1,39 @@
+{
+  "clients": [
+    {
+      "id": "01GQX9BJ1YSEXBP8NB0WVDYH9J",
+      "name": "Patton",
+      "application_account": "696660-6",
+      "checking_account": "048718-5",
+      "cpf": "01182128704"
+    },
+    {
+      "id": "01GQX9BJ20FFC13Q0HMP8HKJFN",
+      "name": "Mitchael",
+      "application_account": "244148-3",
+      "checking_account": "699094-0",
+      "cpf": "68178558873"
+    },
+    {
+      "id": "01GQX9BJ22K4H8M6M0C7V4E9Z2",
+      "name": "Graehme",
+      "application_account": "260645-6",
+      "checking_account": "529255-8",
+      "cpf": "02592956307"
+    },
+    {
+      "id": "01GQX9BJ23D7FBB642YKH2WMJR",
+      "name": "Toni",
+      "application_account": "497741-1",
+      "checking_account": "266880-7",
+      "cpf": "12691670553"
+    },
+    {
+      "id": "01GQX9BJ25AJ4J2W2660TPXVG7",
+      "name": "Harmon",
+      "application_account": "015023-9",
+      "checking_account": "113068-8",
+      "cpf": "16940080622"
+    }
+  ]
+}
