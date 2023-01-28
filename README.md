@@ -1,4 +1,4 @@
-# AngularCpfValidation
+# Angular Cpf Validation
 
 This project was made with the objective to validate a CPF number from a client
 
