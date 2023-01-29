@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100px;
+    place-items: flex-start center;
+    padding: 10px;
+    border: 1px solid red;
+    background: #165c7d;
+  }
+}
