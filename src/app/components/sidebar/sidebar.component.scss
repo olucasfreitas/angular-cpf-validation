@@ -1,17 +1,39 @@
 .container {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: 100%;
 
   .sidenav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 100px;
-    place-items: flex-start center;
-    padding: 10px;
-    border: 1px solid red;
+    width: 75px;
     background: #165c7d;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 50%;
+      width: 100%;
+
+      .icon {
+        color: #fff;
+        font-size: 25px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #739db1;
+          cursor: pointer;
+        }
+      }
+
+      .logo {
+        max-width: 50%;
+        display: block;
+      }
+    }
   }
 }

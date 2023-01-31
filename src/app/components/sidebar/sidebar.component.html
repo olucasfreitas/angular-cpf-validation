@@ -1,7 +1,14 @@
 <mat-drawer-container class="container">
-  <mat-drawer #drawer class="sidenav" mode="side" opened>
-    <p>Auto-resizing sidenav</p>
-
+  <mat-drawer #drawer class="sidenav" [mode]="mode" [opened]="opened">
+    <div class="menu">
+      <img src="../../../assets/img/logo.png" class="logo">
+      <mat-icon class="icon">menu</mat-icon>
+      <mat-icon class="icon">search</mat-icon>
+      <mat-icon class="icon">star</mat-icon>
+      <mat-icon class="icon">sms</mat-icon>
+      <mat-icon class="icon">tune</mat-icon>
+      <mat-icon class="icon">account_balance</mat-icon>
+    </div>
   </mat-drawer>
 
 
