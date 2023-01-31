@@ -3,4 +3,5 @@ export class Client {
   name = '';
   application_account = '';
   checking_account = '';
+  cpfStatus = '';
 }
