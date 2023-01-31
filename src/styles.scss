@@ -1,4 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-horizontal-stepper-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mat-horizontal-stepper-header-container {
+  width: 50%;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.mat-horizontal-content-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mat-step-header .mat-step-icon-content {
+  display: none;
+}
+
+.mat-step-header .mat-step-icon {
+  background-color: #c6ced1;
+  width: 18px;
+  height: 18px;
+}
+
+.mat-step-header .mat-step-icon-selected {
+  background: #e7eef1;
+  border: 2px solid #165c7d;
+  color: #fff;
+}
+
+.mat-step-header .mat-step-label.mat-step-label-active {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #165c7d;
+}
+
+.mat-step-header .mat-step-label {
+  color: #889499;
+}

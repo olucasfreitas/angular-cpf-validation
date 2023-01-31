@@ -1,10 +1,8 @@
 <div class="container">
   <mat-stepper #stepper [linear]="true" labelPosition="bottom" class="stepper">
-    <mat-step class="step">
+    <mat-step>
       <ng-template matStepLabel>Inicio</ng-template>
-      <div class="teste">
-        <ng-content />
-      </div>
+      <ng-content />
     </mat-step>
     <mat-step>
       <ng-template matStepLabel>Documentos</ng-template>
