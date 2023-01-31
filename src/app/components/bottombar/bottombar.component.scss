@@ -1,6 +1,6 @@
 .container {
   border-radius: 2px;
-  height: 10%;
+  height: 13%;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
@@ -11,10 +11,34 @@
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
+    height: 48px;
+    border-radius: 2px;
+  }
+
+  #tips {
     color: #165c7d;
+    border: 1px solid #165c7d;
+  }
+
+  #new-admission {
+    color: #fff;
+    margin-right: 20px;
+    padding: 13px 25px;
+    background: #165c7d;
   }
 
   @media screen and (max-width: 768px) {
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    #tips,
+    #new-admission {
+      width: 100%;
+      margin: 0;
+    }
+
+    #new-admission {
+      margin-bottom: 10px;
+    }
   }
 }
