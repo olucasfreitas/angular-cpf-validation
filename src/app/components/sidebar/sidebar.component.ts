@@ -1,5 +1,5 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
-import { MatDrawerMode } from '@angular/material/sidenav';
+import { MatDrawer, MatDrawerMode } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +7,19 @@ import { MatDrawerMode } from '@angular/material/sidenav';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-  opened = true;
+  opened = false;
   mode: MatDrawerMode = 'side';
-  @ViewChild('drawer') drawer: any;
+  @ViewChild('drawer') drawer: MatDrawer | undefined;
+
+  constructor() {
+    if (window.innerWidth < 600) {
+      this.mode = 'over';
+      this.opened = false;
+    } else {
+      this.mode = 'side';
+      this.opened = true;
+    }
+  }
 
   toggleSidebar() {
     this.opened = !this.opened;
