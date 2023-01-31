@@ -19,6 +19,11 @@ import { BottombarComponent } from './components/bottombar/bottombar.component';
 import { CpfFormComponent } from './components/cpf-form/cpf-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ClientInfoCardComponent } from './components/client-info-card/client-info-card.component';
+import { ClientAccountCardComponent } from './components/client-account-card/client-account-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     StepperComponent,
     BottombarComponent,
     CpfFormComponent,
+    ClientInfoCardComponent,
+    ClientAccountCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,8 +51,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
   ],
-  providers: [],
+  providers: [provideNgxMask()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
