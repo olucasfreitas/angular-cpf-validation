@@ -13,9 +13,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CpfValidationComponent } from './pages/cpf-validation/cpf-validation.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { StepperComponent } from './components/stepper/stepper.component';
+import { BottombarComponent } from './components/bottombar/bottombar.component';
+import { CpfFormComponent } from './components/cpf-form/cpf-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, CpfValidationComponent, SidebarComponent],
+  declarations: [
+    AppComponent,
+    CpfValidationComponent,
+    SidebarComponent,
+    TopbarComponent,
+    StepperComponent,
+    BottombarComponent,
+    CpfFormComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +41,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     MatBadgeModule,
     MatIconModule,
     MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
