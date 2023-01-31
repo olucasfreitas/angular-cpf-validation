@@ -1,0 +1,32 @@
+<mat-card class="container">
+  <mat-card-content class="card-content">
+    <p class="title" *ngIf="accountType === 'Aplication'">
+      <strong>Conta aplicação</strong>
+    </p>
+    <p class="title" *ngIf="accountType === 'Checking'">
+      <strong>Conta corrente</strong>
+    </p>
+    <p class="subtitle">Cooperativa Viacredi</p>
+    <div class="client-info">
+      <div class="row">
+        <mat-icon class="person-icon">credit_card</mat-icon>
+        <div class="text">
+          <p class="label">
+            Número da conta
+          </p>
+          <p class="data" *ngIf="accountType === 'Aplication'">
+            {{ client.application_account}}
+          </p>
+          <p class="data" *ngIf="accountType === 'Checking'">
+            {{ client.checking_account}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <button mat-button class="duplicate-button">
+          Duplicar conta
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
