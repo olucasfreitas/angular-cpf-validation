@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Informe o CPF do futuro cooperado (a)</h2>
+  <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+    Digite apenas os números (sem pontos ou traços).</p>
+  <form [formGroup]="cpfForm" (ngSubmit)="onSubmit()" class="form-container">
+    <label for="input">CPF</label>
+    <span>
+      <input matInput placeholder="CPF" formControlName="cpf" id="input" />
+      <button mat-raised-button class="classteste" type="submit">Consultar por CPF</button>
+    </span>
+  </form>
+</div>
