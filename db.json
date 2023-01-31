@@ -5,6 +5,7 @@
       "name": "Patton",
       "application_account": "696660-6",
       "checking_account": "048718-5",
+      "cpfStatus": "Regular",
       "cpf": "01182128704"
     },
     {
@@ -12,6 +13,7 @@
       "name": "Mitchael",
       "application_account": "244148-3",
       "checking_account": "699094-0",
+      "cpfStatus": "Regular",
       "cpf": "68178558873"
     },
     {
@@ -19,6 +21,7 @@
       "name": "Graehme",
       "application_account": "260645-6",
       "checking_account": "529255-8",
+      "cpfStatus": "Regular",
       "cpf": "02592956307"
     },
     {
@@ -26,6 +29,7 @@
       "name": "Toni",
       "application_account": "497741-1",
       "checking_account": "266880-7",
+      "cpfStatus": "Regular",
       "cpf": "12691670553"
     },
     {
@@ -33,6 +37,7 @@
       "name": "Harmon",
       "application_account": "015023-9",
       "checking_account": "113068-8",
+      "cpfStatus": "Regular",
       "cpf": "16940080622"
     }
   ]
