@@ -6,8 +6,6 @@
   width: 100%;
   height: 100%;
 
-  border: 1px solid red;
-
   h2 {
     font-weight: 400;
     font-size: 22px;
@@ -27,7 +25,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
     label {
       font-weight: 600;
       font-size: 14px;
@@ -36,7 +33,7 @@
       color: #040f14;
     }
 
-    .classteste {
+    .search-button {
       width: 172px;
       height: 34px;
       background: #165c7d;
@@ -55,11 +52,42 @@
       padding: 0 5px;
       border: 1px solid #889499;
       border-radius: 2px;
-      margin-right: 20px;
       transition: all 0.2s ease-in-out;
+      margin: 10px 20px 20px 0;
       &:focus {
         outline: none;
         border: 2px solid #165c7d;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    h2,
+    p {
+      text-align: justify;
+    }
+    .form-container {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .form-elements {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      input {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .mat-mdc-progress-spinner {
+        color: white;
       }
     }
   }

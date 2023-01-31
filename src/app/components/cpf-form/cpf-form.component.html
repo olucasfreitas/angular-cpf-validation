@@ -4,9 +4,11 @@
     Digite apenas os números (sem pontos ou traços).</p>
   <form [formGroup]="cpfForm" (ngSubmit)="onSubmit()" class="form-container">
     <label for="input">CPF</label>
-    <span>
-      <input matInput placeholder="CPF" formControlName="cpf" id="input" />
-      <button mat-raised-button class="classteste" type="submit">Consultar por CPF</button>
+    <span class="form-elements">
+      <input matInput required placeholder="CPF" formControlName="cpf" id="input" mask="000.000.000-00" />
+      <button mat-raised-button class="search-button" type="submit">Consultar por
+        CPF</button>
     </span>
   </form>
+  <mat-error *ngIf="clientNotFound">Cliente não encontrado</mat-error>
 </div>
