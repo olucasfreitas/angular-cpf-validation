@@ -2,8 +2,13 @@
   <app-topbar />
   <div class="container">
     <app-stepper>
-      <app-cpf-form />
+      <app-cpf-form (cpfEmitter)="validateCpf($event)" [clientNotFound]="clientNotFound" />
+      <div class="cards-container" *ngIf="!!client.id">
+        <app-client-account-card [client]="client" />
+        <app-client-info-card [client]="client" accountType="Aplication" />
+        <app-client-info-card [client]="client" accountType="Checking" />
+      </div>
     </app-stepper>
   </div>
-  <app-bottombar />
+  <app-bottombar [client]="!!client.id" />
 </app-sidebar>
