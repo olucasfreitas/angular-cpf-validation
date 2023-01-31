@@ -1,0 +1,32 @@
+<mat-card class="container">
+  <mat-card-content class="card-content">
+    <p class="title">
+      <strong>Situação cadastral do CPF</strong>
+    </p>
+    <p class="subtitle">Consulta na Receita Federal</p>
+    <div class="client-info">
+      <div class="row">
+        <mat-icon class="person-icon">person</mat-icon>
+        <div class="text">
+          <p class="label">
+            Nome
+          </p>
+          <p class="data">
+            {{client.name}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <mat-icon class="checkmark-icon">check_circle</mat-icon>
+        <div class="text">
+          <p class="label">
+            Situação do CPF
+          </p>
+          <p class="data">
+            {{client.cpfStatus}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
