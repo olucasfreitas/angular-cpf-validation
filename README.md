@@ -17,4 +17,4 @@ Inside the project folder, run `yarn | npm run start:json-server`, and then navi
 
 ## Running unit tests
 
-Run `yarn | npm | pnpm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn | npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
