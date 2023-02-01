@@ -22,11 +22,4 @@ describe('ClientInfoCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  // it('should emit the cpf string if the value is not empty', () => {
-  //   const spy = spyOn(component.cpfEmitter, 'emit');
-  //   component.cpfValue = '12345678901';
-  //   component.onSub();
-  //   expect(spy).toHaveBeenCalledWith('12345678901');
-  // });
 });
