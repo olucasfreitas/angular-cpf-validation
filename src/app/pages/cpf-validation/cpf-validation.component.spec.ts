@@ -39,7 +39,6 @@ describe('CpfValidationComponent', () => {
         MatStepperModule,
         ReactiveFormsModule,
       ],
-      // providers: [{ provide: ClientService, useValue: clientServiceSpy }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CpfValidationComponent);
