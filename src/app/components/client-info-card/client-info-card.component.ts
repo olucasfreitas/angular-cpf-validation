@@ -9,8 +9,4 @@ import { Client } from 'src/app/entities/client.entity';
 export class ClientInfoCardComponent {
   @Input() client: Client = new Client();
   @Input() accountType: string = 'Checking';
-
-  constructor() {
-    console.log(this.client, 'ClientInfoCardComponent');
-  }
 }
