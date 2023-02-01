@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { CpfFormComponent } from './cpf-form.component';
 
@@ -8,9 +10,9 @@ describe('CpfFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CpfFormComponent ]
-    })
-    .compileComponents();
+      declarations: [CpfFormComponent],
+      imports: [ReactiveFormsModule, MatFormFieldModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CpfFormComponent);
     component = fixture.componentInstance;
