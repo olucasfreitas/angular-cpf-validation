@@ -23,4 +23,18 @@ describe('SidebarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should set mode to "over" and opened to false for small screens', () => {
+    component.onResize({ target: { innerWidth: 599 } });
+
+    expect(component.mode).toBe('over');
+    expect(component.opened).toBe(false);
+  });
+
+  it('should set mode to "side" and opened to true for large screens', () => {
+    component.onResize({ target: { innerWidth: 600 } });
+
+    expect(component.mode).toBe('side');
+    expect(component.opened).toBe(true);
+  });
 });
