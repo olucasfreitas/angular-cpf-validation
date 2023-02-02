@@ -5,7 +5,7 @@ import {
 } from '@angular/common/http/testing';
 
 import { ClientService } from './client.service';
-import { Client } from '../entities/client.entity';
+import { Client } from '@entities/client.entity';
 
 describe('ClientService', () => {
   let service: ClientService;
