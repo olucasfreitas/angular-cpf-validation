@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Client } from 'src/app/entities/client.entity';
+import { Client } from '@entities/client.entity';
 
 @Component({
   selector: 'app-client-account-card',

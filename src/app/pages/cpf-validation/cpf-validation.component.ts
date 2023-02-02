@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Client } from 'src/app/entities/client.entity';
-import { ClientService } from 'src/app/services/client.service';
+import { Client } from '@entities/client.entity';
+import { ClientService } from '@services/clientService/client.service';
 
 @Component({
   selector: 'app-cpf-validation',

@@ -6,13 +6,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatStepperModule } from '@angular/material/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { of } from 'rxjs';
-import { BottombarComponent } from 'src/app/components/bottombar/bottombar.component';
-import { CpfFormComponent } from 'src/app/components/cpf-form/cpf-form.component';
-import { SidebarComponent } from 'src/app/components/sidebar/sidebar.component';
-import { StepperComponent } from 'src/app/components/stepper/stepper.component';
-import { TopbarComponent } from 'src/app/components/topbar/topbar.component';
-import { Client } from 'src/app/entities/client.entity';
-import { ClientService } from 'src/app/services/client.service';
+import { BottombarComponent } from '@components/bottombar/bottombar.component';
+import { CpfFormComponent } from '@components/cpf-form/cpf-form.component';
+import { SidebarComponent } from '@components/sidebar/sidebar.component';
+import { StepperComponent } from '@components/stepper/stepper.component';
+import { TopbarComponent } from '@components/topbar/topbar.component';
+import { Client } from '@entities/client.entity';
+import { ClientService } from '@services/clientService/client.service';
 
 import { CpfValidationComponent } from './cpf-validation.component';
 
